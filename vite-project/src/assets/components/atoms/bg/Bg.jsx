@@ -32,12 +32,12 @@ const Bg = () => {
     <div className="flex flex-row-reverse justify-around">
         <div className="">
             <div>
-                <p className="text-[12px] font-normal tracking-[2px] uppercase text-[#21092F]">Cardholder Name</p>
-                <InputElement type={number} maxLength={16} placeholder={"e.g. Jane Appleseed"} onChange={addName} /> 
+                <p className="text-[12px] font-normal tracking-[2px] uppercase text-[#21092F]">Card Number</p>
+                <InputElement type={number} maxLength={16} placeholder={"e.g. 1234 5678 9123 0000"} onChange={addName} /> 
             </div>
             <div>
-                <p>Card Number</p>
-                <InputElement maxLength={16} placeholder={"e.g. 1234 5678 9123 0000"} onChange={addNumber} /> 
+                <p className="text-[12px] font-normal tracking-[2px] uppercase text-[#21092F]">Card Name</p>
+                <InputElement maxLength={16} placeholder={"e.g. Jane Appleseed "} onChange={addNumber} /> 
             </div>
             <div>
                 <div>
@@ -53,11 +53,11 @@ const Bg = () => {
         </div>
 
         <div className="relative bg-gradient-to-r from-[#D53AFF] to-[#FF834A] w-[447px] h-[245px] rounded-[8px]">
-            <p  className="absolute top-[40px] left-[40px] text-white text-[28px]">{name}</p>
-            <p  className="absolute top-[90px] left-[40px] text-white text-[28px]">{number}</p>
+            <p  className="absolute top-[100px] left-[40px] text-white text-[28px]">{name}</p>
+            <p  className="absolute bottom-[10px] left-[40px] text-white text-[14px]">{number}</p>
             <div>
-                <p className="absolute bottom-[10px] right-[60px] text-white text-[28px]">{month}/</p>  
-                <p className="absolute bottom-[10px] right-[25px] text-white text-[28px]">{year}</p> 
+                <p className="absolute bottom-[10px] right-[60px] text-white text-[14px]">{month}/</p>  
+                <p className="absolute bottom-[10px] right-[45px] text-white text-[14px]">{year}</p> 
             </div>
         </div>
     </div>
