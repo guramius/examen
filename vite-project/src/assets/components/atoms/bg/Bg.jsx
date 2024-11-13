@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import InputElement from "../inputElement/InputElement"; 
 import backGround from '../../images/bg.png'
 const Bg = () => {
@@ -28,6 +28,11 @@ const Bg = () => {
         let addYear = e.target.value.replace(/[^0-9]/g, "");  
         setYear(addYear);
     };
+
+    useEffect(() => {
+        document.title = "first Example"
+    },[])
+
   return (
     <div className="flex flex-row-reverse justify-around">
          <div>
