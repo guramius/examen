@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InputElement from "../inputElement/InputElement"; 
-
+import backGround from '../../images/bg.png'
 const Bg = () => {
     const [name, setName] = useState("0000 0000 0000 0000");
     const [number, setNumber] = useState("e.g. Jane Appleseed")
@@ -30,7 +30,8 @@ const Bg = () => {
     };
   return (
     <div className="flex flex-row-reverse justify-around">
-        <div className="">
+         <div>
+            <img className="absolute left-0" src={backGround} alt="" />
             <div>
                 <p className="text-[12px] font-normal tracking-[2px] uppercase text-[#21092F]">Card Number</p>
                 <InputElement type={number} maxLength={16} placeholder={"e.g. 1234 5678 9123 0000"} onChange={addName} /> 
