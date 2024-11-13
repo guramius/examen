@@ -1,5 +1,5 @@
 import './App.css'
-import Bg from './assets/components/atoms/bg/bg'
+import Bg from './assets/components/atoms/bg/Bg'
 function App() {
 
   return (
